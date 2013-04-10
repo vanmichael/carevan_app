@@ -85,8 +85,9 @@ li {
 
 /* header */
 
-.header {
-
+#header_title {
+font-family:"brush script mt";
+margin-top:-70px;
 }
 
 #header_banner {
@@ -162,6 +163,7 @@ footer ul li {
 
 .gridster {
   height:200px;
+  margin-left:5%;
 }
 
 /* Team */
