@@ -5,6 +5,7 @@ CarevanApp::Application.routes.draw do
   match "home" => "static_pages#home"
   match "about" => "static_pages#about"
   match "portfolio" => "static_pages#portfolio"
+  match "team" => "static_pages#team"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
