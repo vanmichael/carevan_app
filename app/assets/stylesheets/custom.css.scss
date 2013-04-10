@@ -1,0 +1,160 @@
+@import "bootstrap";
+
+/* mixins, variables, etc. */
+
+$red: #C00000;
+$green: #006600;
+$grey: #BABABA;
+$blue: #0066FF;
+$light_blue: #C1DAFF;
+
+/* universal */
+
+html {
+  overflow-y: scroll;
+}
+
+a {
+  z-index:100;
+}
+
+body {
+  background-color:$light_blue;
+}
+
+section {
+  overflow: auto;
+}
+
+textarea {
+  resize: vertical;
+}
+
+.center {
+  text-align: center;
+}
+
+.center h1 {
+  margin-bottom: 10px;
+}
+
+/* typography */
+
+.title {
+  margin-left:10%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1;
+}
+
+h3 {
+  color:#A00000;
+}
+
+h1 {
+  font-size: 3em;
+  letter-spacing: -2px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.7em;
+  letter-spacing: -1px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: normal;
+  color: #999;
+}
+
+p {
+  font-size: 1.1em;
+  line-height: 1.7em;
+}
+
+li {
+	margin-left:15px;
+	margin-right:15px;
+}
+
+/* header */
+
+.header {
+
+}
+
+#header_banner {
+  width:100%;
+  margin-top:-40px;
+  box-shadow: 5px 5px 5px #888888;
+}
+
+.navbar {
+opacity:1.0;
+background-image: none;
+}
+
+  .navbar-inner {
+    background: $blue;
+    opacity:.5;
+    filter: none;
+    min-height: 100%;
+}
+
+.navbar .nav > li > a {
+  margin-left:10px;
+  text-shadow: none;
+  color: #FFFFFF;
+  }
+
+.nav {
+padding-left:10px;
+text-shadow: none;
+}
+
+
+/* Footer */
+
+footer {
+  background-image: url(/assets/footer_banner.png);
+  background-repeat: no-repeat;
+  background-size:100% 100%;
+  height:166px;
+  margin-top: 2%;
+  padding-top: 5px;
+  color: #999;
+  position:relative;
+  top:280px;
+}
+
+footer a {
+  color: #555;
+}  
+
+footer a:hover { 
+  color: #222;
+}
+
+footer small {
+  float: left;
+}
+
+footer ul {
+  float: right;
+  list-style: none;
+}
+
+footer ul li {
+  float: left;
+  margin-left: 10px;
+}
+
+#footer_nav_links {
+  margin-top:130px;
+}
+
+/* Home */
+
+.box {
+}
