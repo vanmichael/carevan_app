@@ -2,10 +2,20 @@ CarevanApp::Application.routes.draw do
 
   root :to => 'static_pages#home'
 
+  resources :users
+  resources :sessions, only: [:new, :create, :destroy]
+
   match "home" => "static_pages#home"
   match "about" => "static_pages#about"
   match "portfolio" => "static_pages#portfolio"
   match "team" => "static_pages#team"
+
+ #Custom Routes for User Accounts
+
+  match '/signup',  to: 'users#new'
+  match '/signin',  to: 'sessions#new'
+  match '/signout', to: 'sessions#destroy', via: :delete
+  
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

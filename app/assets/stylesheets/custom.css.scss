@@ -183,3 +183,19 @@ footer ul li {
 .member_name {
   margin-left:50px;
 }
+
+/* User Profile */
+
+#avatar {
+  margin-top:20px;
+  margin-left:30px;
+  border:solid 3px $blue;
+  border-radius:60px;
+  box-shadow: 5px 5px 5px #888888;
+  opacity:.8;
+}
+
+#user_info {
+  margin-top:20px;
+  margin-left:20px;
+}
