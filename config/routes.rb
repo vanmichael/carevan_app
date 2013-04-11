@@ -5,10 +5,10 @@ CarevanApp::Application.routes.draw do
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
 
-  match "home" => "static_pages#home"
-  match "about" => "static_pages#about"
-  match "portfolio" => "static_pages#portfolio"
-  match "team" => "static_pages#team"
+  match "/home" => "static_pages#home"
+  match "/about" => "static_pages#about"
+  match "/portfolio" => "static_pages#portfolio"
+  match "/team" => "static_pages#team"
 
  #Custom Routes for User Accounts
 
